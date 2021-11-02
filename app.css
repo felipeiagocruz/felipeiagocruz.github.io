@@ -26,8 +26,13 @@ p {
   padding-left: 30px;
 }
 
+footer p {
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 0px;
+}
+
 i {
-  padding-left: 25px;
+  padding: 0 5px;
   color: gray;
 }
 
