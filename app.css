@@ -27,8 +27,16 @@ p {
 }
 
 footer p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Ubuntu", sans-serif;
   padding-left: 0px;
+}
+
+#atualizadoEm {
+  margin: 0;
+  display: block;
 }
 
 i {
@@ -123,6 +131,7 @@ button {
 }
 
 .rodape {
+  width: 100%;
   padding-top: 40px;
   text-align: center;
   padding-bottom: 10px;
