@@ -2,62 +2,80 @@
 <html>
   <head>
     <!-- 	Acessa o css da página: -->
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <!-- 	Acessa o fontawesome -->
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
+
     <title>Felipe Cruz - Desenvolvedor</title>
     <!-- 	Adiciona a formatação correta para PT-BR -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   </head>
 
-  <body class="background">
-    <!-- 	Insere um div que servira de cartão para o conteúdo do site -->
-    <div class="cartao">
-      <img class="perfil" src="perfil.jpg" />
-      <hr />
-      <div class="bandejaIcon">
-        <h1>Felipe Cruz - Desenvolvedor Jr</h1>
-        <!-- Icone do linkedin -->
+  <body>
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="/mp4/backgroundVideo.mp4" type="video/mp4" />
+    </video>
+    <div class="background__gradient">
+      <span class="background"></span>
+      <span class="background__gradient--clip"></span>
+      <!-- 	Insere um div que servira de cartão para o conteúdo do site -->
+      <div class="card">
+        <div class="card__header">
+          <img
+            class="card__profilepic"
+            src="./img/profilepic.jpeg"
+            alt="Foto de Felipe Cruz"
+          />
+          <p>Olá, <span>sou Felipe Cruz</span></p>
+        </div>
+        <main card="card__main">
+          <p class="card__main--title">
+            <i id="mug" class="fa fa-mug-hot"></i>
+            Sobre mim:
+          </p>
+          <p class="card__main--content">
+            Sou um apaixonado por desenvolvimento de sistemas web.
+          </p>
+          <p class="card__main--content">
+            Atuo profissionalmente como
+            <b> assistente de desenvolvimento de software.</b>
+          </p>
+          <p class="card__main--content">
+            Sou fullstack com <b>MongoDB, Express, React, Node.js</b>
+          </p>
+          <p class="card__main--content">
+            Atualmente residindo em São Paulo - SP
+          </p>
+          <p class="card__main--content">
+            Custumo ser encontrado trabalhando acompanhado de um controverso
+            café requentado.
+          </p>
+        </main>
+        <footer class="footer">
+          <p>
+            <a href="https://github.com/felipeiagocruz" target="_blank"
+              ><i id="github" class="fab fa-twitter fa-2x"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/felipe-iago-b88209155/"
+              target="_blank"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+            <!-- Icone do GitHub -->
+            <a href="https://github.com/felipeiagocruz" target="_blank"
+              ><i id="github" class="fab fa-github fa-2x"></i
+            ></a>
+          </p>
+        </footer>
       </div>
-      <hr />
-      <div class="principal">
-        <p>
-          Trabalho em Médicos Sem Fronteiras em áreas de otimização e soluções
-          de processos internos através da PowerPlataform.
-        </p>
-        <p>
-          Sou formado em História pela USP e atuo como desenvolvedor a 1 ano.
-          Sou apaixonado por programação e trabalho humanitário.
-        </p>
-      </div>
-      <hr />
-      <div class="spoiler">
-        <button class="selected" id="btnHabilidades">Habilidades</button
-        ><button id="btnProjetos">Projetos</button
-        ><button id="btnEstudo">Estudo</button>
-        <div class="spoilerConteudo"></div>
-      </div>
-
-      <footer class="rodape">
-        <p>
-          <a
-            href="https://www.linkedin.com/in/felipe-iago-b88209155/"
-            target="_blank"
-            ><i class="fab fa-linkedin fa-2x"></i
-          ></a>
-          <!-- Icone do GitHub -->
-          <a href="https://github.com/felipeiagocruz" target="_blank"
-            ><i id="github" class="fab fa-github fa-2x"></i
-          ></a>
-        </p>
-        <p id="atualizadoEm">Atualizado em 2021</p>
-      </footer>
     </div>
-    <script type="text/javascript" src="./app.js"></script>
+
+    <script type="text/javascript" src="javascript/app.js"></script>
   </body>
 </html>

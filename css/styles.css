@@ -1,0 +1,285 @@
+/*Importa a fonte do google*/
+@import "https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.background__gradient {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(145, 145, 145, 0.55);
+  z-index: 10;
+}
+
+.background__gradient::before {
+  font-family: "Open Sans", sans-serif;
+  content: "\002F \003E";
+  font-weight: 600;
+  position: absolute;
+  line-height: 1;
+  top: 70%;
+  left: 90%;
+  translate: -50%;
+  font-size: 20rem;
+  color: white;
+  z-index: 2;
+  text-shadow: 1rem 1rem black;
+}
+
+.background__gradient--clip {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(145, 145, 145, 0.55);
+}
+
+.background::before {
+  font-family: "Open Sans", sans-serif;
+  content: "\003C";
+  font-weight: 600;
+  position: absolute;
+  line-height: 1;
+  top: 5%;
+  left: 10%;
+  translate: -50%;
+  font-size: 20rem;
+  z-index: 30;
+  color: white;
+  text-shadow: 1rem 1rem black;
+}
+
+.card {
+  font-family: "Alice", sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  padding-top: 10px;
+  width: 60rem;
+  padding-bottom: 10rem;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.85);
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  z-index: 20;
+  color: white;
+  font-size: 6rem;
+  padding-left: 6rem;
+}
+
+.card__header {
+  position: relative;
+}
+
+.card p {
+  margin-top: 2rem;
+}
+
+.card p span {
+  display: block;
+}
+
+.card__main {
+}
+
+.card__main--title {
+  padding-top: 4rem;
+  margin-left: 2rem;
+  font-size: 4rem;
+}
+
+.card__main--content {
+  text-align: justify-all;
+  padding-right: 6rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+#mug {
+  color: white;
+  font-size: 5rem;
+  padding-right: 1rem;
+}
+
+.card__profilepic {
+  border-radius: 50%;
+  outline: 1rem solid rgba(0, 0, 0, 0.85);
+  border: 1rem solid rgba(0, 0, 0, 0.85);
+  outline-offset: 1rem;
+  position: absolute;
+  top: -60%;
+  left: 70%;
+  width: 30%;
+}
+
+#backgroundVideo {
+  margin-top: -2%;
+  scale: 1.1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 5rem;
+  width: 100%;
+  top: 110%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 400;
+}
+
+.footer a:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer a {
+  color: white;
+}
+
+@media (max-height: 800px) {
+  .card__main--title {
+    padding-top: 0rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+
+  .card__main--content {
+    text-align: justify-all;
+    padding-right: 6rem;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+  }
+
+  #mug {
+    color: white;
+    font-size: 3rem;
+    padding-right: 1rem;
+  }
+
+  .card {
+    font-family: "Alice", sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    padding-top: 10px;
+    width: 55%;
+    height: 65vh;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    z-index: 20;
+    color: white;
+    font-size: 3rem;
+    padding-left: 6rem;
+  }
+  .footer {
+    color: white;
+    text-align: center;
+    position: absolute;
+    font-size: 3rem;
+    width: 100%;
+    top: 110%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 400;
+  }
+
+  .footer a:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  .footer a {
+    color: white;
+  }
+}
+
+@media (max-width: 700px) {
+  .card__main--title {
+    padding-top: 0rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+
+  .card__main--content {
+    text-align: justify-all;
+    padding-right: 6rem;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    line-height: 0.5;
+  }
+  .card {
+    font-family: "Alice", sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    padding-top: 10px;
+    width: 90%;
+    height: 55vh;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    z-index: 20;
+    color: white;
+    font-size: 3rem;
+    padding-left: 3rem;
+  }
+  .card__profilepic {
+    border-radius: 50%;
+    outline: 0rem solid rgba(0, 0, 0, 0.85);
+    border: 1rem solid rgba(0, 0, 0, 0.85);
+    outline-offset: 1rem;
+    position: absolute;
+    top: -150%;
+    left: 70%;
+    width: 30%;
+  }
+}
