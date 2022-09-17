@@ -354,7 +354,7 @@ body {
 @media (min-width: 1024px) {
   html,
 body {
-  font-size: 67%;
+  font-size: 60%;
   margin: 0;
   padding: 0;
 }
@@ -493,7 +493,7 @@ body {
     font-weight: 600;
     position: absolute;
     line-height: 1;
-    top: 80%;
+    top: 75%;
     left: 91%;
     translate: -50%;
     font-size: 15rem;
